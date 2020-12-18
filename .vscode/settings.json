@@ -1,0 +1,17 @@
+{
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+	"editor.detectIndentation": false,
+	"eslint.enable": true,
+	"spellright.language": "de",
+	"spellright.documentTypes": [
+		"markdown",
+		"latex"
+    ],
+    "npm.packageManager": "yarn",
+    "eslint.packageManager": "yarn",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "typescript.tsdk": "node_modules\\typescript\\lib",
+}

@@ -1,5 +1,5 @@
-sap.ui.define(['jquery.sap.global', 'sap/ui/model/ChangeReason', 'sap/ui/model/ListBinding', './namespace'],
-  function (jQuery, ChangeReason, ListBinding, namespace) {
+sap.ui.define(['jquery.sap.global', 'sap/ui/model/ChangeReason', 'sap/ui/model/ListBinding', './namespace', './mobx'],
+  function (jQuery, ChangeReason, ListBinding, namespace, mobx) {
     'use strict';
 
     function isNil(value) {

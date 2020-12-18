@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "allowJs": false,
+      "checkJs": false,
+      "noEmit": true,
+      "lib": ["es2017", "DOM"],
+      "module": "es6",
+      "target": "es6",
+      "moduleResolution": "Node",
+      "allowSyntheticDefaultImports": true
+    },
+    "include": ["**/*.ts"]
+}

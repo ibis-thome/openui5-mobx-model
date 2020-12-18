@@ -1,0 +1,53 @@
+{
+	// See https://go.microsoft.com/fwlink/?LinkId=733558
+	// for the documentation about the tasks.json format
+	"version": "2.0.0",
+	"tasks": [
+        {
+            "label": "tsc_watch",
+            "type": "shell",
+            "command": "yarn",
+            "args": ["run", "tsc", "-watch", "-p", "tsconfig.json"],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "isBackground": false,
+            "problemMatcher": [
+                "$tsc"
+            ]
+        },
+        {
+            "label": "tsc",
+            "type": "shell",
+            "command": "yarn",
+            "args": ["run", "tsc", "-p", "tsconfig.json"],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "isBackground": false,
+            "problemMatcher": [
+                "$tsc"
+            ]
+        },
+        
+        {
+            "type": "npm",
+            "label": "rollup",
+			"script": "rollup",
+			"path": "/",
+            "problemMatcher": [],
+            "dependsOn": [
+                "tsc"
+            ]
+        },
+        {
+            "label": "DEV",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "rollup",
+                "tsc_watch"
+            ],
+            "problemMatcher": []
+        }
+	]
+}

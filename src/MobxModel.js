@@ -1,5 +1,5 @@
-sap.ui.define(['jquery.sap.global', 'sap/ui/model/Model', 'sap/ui/model/Context', './MobxListBinding', './MobxPropertyBinding', './namespace'],
-  function (jQuery, AbstractModel, Context, MobxListBinding, MobxPropertyBinding, namespace) {
+sap.ui.define(['jquery.sap.global', 'sap/ui/model/Model', 'sap/ui/model/Context', './MobxListBinding', './MobxPropertyBinding', './namespace', './mobx'],
+  function (jQuery, AbstractModel, Context, MobxListBinding, MobxPropertyBinding, namespace, mobx) {
     'use strict';
 
     function isNil(value) {

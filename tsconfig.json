@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "allowJs": false,
+      "checkJs": false,
+      "noEmit": false,
+      "target": "ES2018",
+      "module": "CommonJS",
+      "moduleResolution": "Node",
+      "types": ["node"],
+      "esModuleInterop": true,
+      "sourceMap": false
+    },
+    "include": [
+      "*.ts"
+    ],
+    "exclude": [
+        "src/**/"
+    ]
+  }

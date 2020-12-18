@@ -1,0 +1,91 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "ui5",
+      "@typescript-eslint"
+    ],
+    "env": {
+      "worker": true,
+      "browser": true,
+      "jquery": false
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+      "no-unused-vars": [
+        "off"
+      ],
+      "no-mixed-spaces-and-tabs": "error",
+      "indent": [
+        "error",
+        4
+      ],
+      "comma-spacing": [
+        "error",
+        {
+          "after": true
+        }
+      ],
+      "semi-spacing": [
+        "error",
+        {
+          "after": true
+        }
+      ],
+      "space-before-function-paren": [
+        "error",
+        "always"
+      ],
+      "semi-style": [
+        "error",
+        "last"
+      ],
+      "space-infix-ops": [
+        "error",
+        {
+          "int32Hint": false
+        }
+      ],
+      "space-before-blocks": [
+        "error",
+        "always"
+      ],
+      "keyword-spacing": [
+        "error",
+        {
+          "before": true,
+          "overrides": {
+            "if": {
+              "after": false
+            },
+            "for": {
+              "after": false
+            },
+            "while": {
+              "after": false
+            }
+          }
+        }
+      ],
+      "block-spacing": [
+        "error",
+        "always"
+      ],
+      "key-spacing": [
+        "error"
+      ],
+      "no-console": "off",
+      "multiline-comment-style": [
+        "error",
+        "starred-block"
+      ],
+      "ui5/no-global-name": [
+        "error"
+      ],
+      "no-undef": [
+        "off"
+      ],
+      "@typescript-eslint/type-annotation-spacing": [
+        "error"
+      ]
+    }
+  }
